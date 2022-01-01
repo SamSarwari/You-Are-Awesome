@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  You Are Awesome
 //
@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        messageLabel.text = "Lets Start"
+        
+
     }
 
-
+    @IBAction func messageButtonPressed(_ sender: UIButton) {
+        
+        messageLabel.text = "You Are Awesome"
+  
+    }
+        
 }
 
